@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    user-select: none; /* Make it feel like a widget */
+    -webkit-app-region: drag; /* Allow dragging */
+}
+
+.container {
+    background: rgba(20, 20, 30, 0.9);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 100vh; /* Fill the window */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: #aaa;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timer {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-variant-numeric: tabular-nums;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 1.2rem;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #fff;
+}

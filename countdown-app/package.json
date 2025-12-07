@@ -1,0 +1,23 @@
+{
+  "name": "countdown-app",
+  "version": "1.0.0",
+  "description": "A countdown timer to November 8, 2031",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.countdown",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^26.0.12"
+  }
+}
